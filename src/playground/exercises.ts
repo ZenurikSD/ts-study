@@ -1,27 +1,49 @@
 
-//String manipulation
-function reverseString(string: string) : string{
-
+//String manipulation (Challenge: ignore spaces and punctuation)
+/** Inverte um texto, removendo espaços e pontuação usando regex */ 
+function reverseString(txt: string) : string{
     var reversedString = '';
 
-    for(let i=string.length-1; i>=0; i--){
-        reversedString += string[i]
-        
+    for(let i=txt.length-1; i>=0; i--){
+        if(txt[i].search(/[\w]+/) != -1){
+            reversedString += txt[i]
+        }
     }
     return reversedString;
 }
-console.log(reverseString('Hello'));
+console.log(reverseString('Hello world! . ; ? ~ !@#$%%'));
 
 
-// Array operations
-function findMax(array: number[]): number{
+// Array operations (CHALLENGE: find min and max)
+/** Retorna uma tupla com os números mínimo e máximo */
+function findMinMax(array: number[]): [number, number]{
+    var min = array[0];
     var max = 0;
-    for (let number of array){
-        if (number > max){
-            max = number;
+    
+    for (let i of array){
+        if (i > max){
+            max = i;
+        } else if (i <= min){
+            min = i;
         }
     }
 
-    return max;
+    return [min, max];
 }
-console.log(findMax([0, 3, 2, 6, 123, 124, 12.5, 1]));
+console.log(findMinMax([55, 3, 2, 6, 123, 124, 12.5, 1]));
+
+
+// Object Manipulation
+let obj1 = {name: 'Alisson', number: 24}
+function countProperties(obj: object) : number{
+    var propcount = 0;
+
+    for (let prop in obj){
+        propcount ++;
+    }
+
+    return propcount;
+    //Alternativa melhor
+    //return Object.keys(obj).length;
+}
+console.log(countProperties(obj1));

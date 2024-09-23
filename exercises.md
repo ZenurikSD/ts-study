@@ -3,7 +3,7 @@ Here are a few programming exercises that focus on JavaScript's data types:
 
 ---
 
-### 1. **String Manipulation**
+### ✅ 1. **String Manipulation**
 
 **Exercise**:  
 Write a function `reverseString(str)` that takes a string as input and returns the string reversed.
@@ -21,7 +21,7 @@ Extend the function to ignore spaces and punctuation while reversing.
 
 ---
 
-### 2. **Array Operations**
+### ✅ 2. **Array Operations**
 
 **Exercise**:  
 Write a function `findMax(arr)` that takes an array of numbers and returns the largest number.
