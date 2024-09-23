@@ -4,10 +4,10 @@
 function reverseString(txt: string) : string{
     var reversedString = '';
 
+    txt = txt.replace(/[\s\W]+/g, '')
+    
     for(let i=txt.length-1; i>=0; i--){
-        if(txt[i].search(/[\w]+/) != -1){
-            reversedString += txt[i]
-        }
+        reversedString += txt[i]
     }
     return reversedString;
 }
