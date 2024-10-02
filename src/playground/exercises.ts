@@ -1,4 +1,3 @@
-
 //String manipulation (Challenge: ignore spaces and punctuation)
 /** Inverte um texto, removendo espaços e pontuação usando regex */ 
 function reverseString(txt: string) : string{
@@ -45,10 +44,8 @@ function countProperties(obj: object) : object{
     var obj_values: any[] = Object.values(obj);
 
     for (let i = 0; i < obj_keys.length; i++){
-
-        //Se tiver mais de 1 posição no índice, é um vetor ou string. Então o valor = tamanho
-        //Se não, valor = 1
-        if (obj_values[1]){
+        
+        if (obj_values[i].length != undefined){
             target_obj[obj_keys[i]] = obj_values[i].length
         } else {
             target_obj[obj_keys[i]] = 1;
