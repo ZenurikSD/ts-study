@@ -37,7 +37,7 @@ let obj1 = {name: 'Alisson', number: 24, somearray: [1,5,2]}
 
 function countProperties(obj: object) : object{
     
-    //Constrói um objeto vazio que permite fazer append de propriedades
+    //Constrói um objeto vazio que permite fazer "append" de propriedades
     var target_obj: Record<string,any> = {} 
 
     var obj_keys:string[] = Object.keys(obj);
@@ -55,3 +55,28 @@ function countProperties(obj: object) : object{
     return target_obj;
 }
 console.log(countProperties(obj1));
+
+
+//Number operations
+function isPrime(num: number): boolean {
+    var max = Math.floor(Math.sqrt(num))
+
+    //TO-DO: how?
+    
+    return true;
+}
+
+// function generateCandidates(max: number): number[]{
+//     var array = [];
+//     var j = 2;
+    
+//     for (let i=0; i<max-1; i++){
+//         array.push(j)
+//         j++;
+//     }
+    
+//     return array
+// }
+
+// console.log(isPrime(7));  // Output: true
+// console.log(isPrime(10)); // Output: false
