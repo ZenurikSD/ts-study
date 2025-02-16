@@ -99,8 +99,8 @@ function isPalindrome(text: string): boolean{
         }
     }
 
-    textNS.toLowerCase();
-    reversed.toLowerCase();
+    textNS = textNS.toLowerCase();
+    reversed = reversed.toLowerCase();
 
     if (textNS == reversed)
         return true;
