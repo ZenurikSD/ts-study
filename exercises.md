@@ -39,7 +39,7 @@ Modify the function to return both the maximum and minimum numbers in the array.
 
 ---
 
-### 3. **Object Manipulation**
+### ✅ 3. **Object Manipulation**
 
 **Exercise**:  
 Create a function `countProperties(obj)` that counts the number of properties in an object.
@@ -58,7 +58,7 @@ Modify the function to return an object with the property names as keys and the 
 
 ---
 
-### 4. **Number Operations**
+### ❌ 4. **Number Operations**
 
 **Exercise**:  
 Write a function `isPrime(num)` that checks if a number is prime.
@@ -77,7 +77,7 @@ Write a function `findPrimes(limit)` that returns all prime numbers up to the gi
 
 ---
 
-### 5. **Boolean Logic**
+### ✅ 5. **Boolean Logic**
 
 **Exercise**:  
 Create a function `isPalindrome(str)` that returns `true` if the string is a palindrome (reads the same forwards and backwards) and `false` otherwise.
