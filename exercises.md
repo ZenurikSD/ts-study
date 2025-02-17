@@ -96,7 +96,7 @@ Modify the function to ignore case and spaces.
 
 ---
 
-### 6. **Array of Objects**
+### ✅ 6. **Array of Objects**
 
 **Exercise**:  
 Write a function `getAverageAge(people)` that takes an array of objects (each containing a person's name and age) and returns the average age.
@@ -120,7 +120,7 @@ Modify the function to handle an empty array by returning 0.
 
 ---
 
-### 7. **Type Checking**
+### [❌ NO] 7. **Type Checking**
 
 **Exercise**:  
 Write a function `typeCheck(variable)` that returns the data type of the given variable (`"string"`, `"number"`, `"boolean"`, etc.).

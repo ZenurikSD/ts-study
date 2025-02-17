@@ -82,6 +82,7 @@ function isPrime(num: number): boolean {
     return true;
 }
 
+// Boolean operations
 function isPalindrome(text: string): boolean{
     var reversed = "";
     var textNS = "";
@@ -111,3 +112,22 @@ function isPalindrome(text: string): boolean{
 console.log(isPalindrome("Hello"));
 console.log(isPalindrome("Madam"));
 console.log(isPalindrome("Subi no onibus"));
+
+
+// Object arrays
+const group = [
+    {name: "Zenurik", age: 24},
+    {name: "Zenith", age: 100},
+    {name: "Azimuth", age: 33}
+];
+
+function getAverageAge(group: {age: number}[]): number{
+    var average = 0;
+    
+    group.forEach(person => {
+        average += person.age;
+    })
+    
+    return average / group.length;
+}
+console.log(getAverageAge(group).toFixed(2));
